@@ -9,6 +9,7 @@ git clone https://github.com/hypn4/my-aider-config
 2. Copy configs to your project dir(such as vscode workspace)
 ```bash
 cp my-aider-config TO_YOUR_PROJECT_DIR
+```
 
 3. Run `aider`
 ```bash
