@@ -16,9 +16,11 @@ cp my-aider-config TO_YOUR_PROJECT_DIR
 aider
 
 # Or pass arguments
-aider -c CONFIG_FILE_PATH
+aider -c CONFIG_FILE_PATH/.aider.conf.yml
 ```
 
+
+## (Optional.) Add .env file
 ```
 
 # .env
