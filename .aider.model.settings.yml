@@ -1,0 +1,62 @@
+# name: str
+# edit_format: str = "whole"
+# weak_model_name: Optional[str] = None
+# use_repo_map: bool = False
+# send_undo_reply: bool = False
+# accepts_images: bool = False
+# lazy: bool = False
+# reminder: str = "user"
+# examples_as_sys_msg: bool = False
+# extra_headers: Optional[dict] = None
+# extra_body: Optional[dict] = None
+# max_tokens: Optional[int] = None
+# cache_control: bool = False
+# caches_by_default: bool = False
+# use_system_prompt: bool = True
+# use_temperature: bool = True
+# streaming: bool = True
+
+# - accepts_images: false
+#   cache_control: false
+#   caches_by_default: false
+#   edit_format: whole
+#   examples_as_sys_msg: false
+#   extra_headers: null
+#   lazy: false
+#   max_tokens: null
+#   name: gpt-3.5-turbo
+#   reminder: sys
+#   send_undo_reply: false
+#   streaming: true
+#   use_repo_map: false
+#   use_system_prompt: true
+#   use_temperature: true
+
+- name: openrouter/mistralai/pixtral-12b:free
+  edit_format: "whole"
+  use_repo_map: true
+  extra_body:
+    provider:
+      allow_fallbacks: false
+      data_collection: "deny"
+- name: openrouter/qwen/qwen-2-vl-7b-instruct:free
+  edit_format: "whole"
+  use_repo_map: true
+  extra_body:
+    provider:
+      allow_fallbacks: false
+      data_collection: "deny"
+- name: openrouter/meta-llama/llama-3.1-8b-instruct:free
+  edit_format: "whole"
+  use_repo_map: true
+  extra_body:
+    provider:
+      allow_fallbacks: false
+      data_collection: "deny"
+- name: openrouter/nousresearch/hermes-3-llama-3.1-405b:free
+  edit_format: "whole"
+  use_repo_map: true
+  extra_body:
+    provider:
+      allow_fallbacks: false
+      data_collection: "deny"
