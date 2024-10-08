@@ -72,10 +72,10 @@ model: openrouter/nousresearch/hermes-3-llama-3.1-405b:free
 #openai-organization-id: xxx
 
 ## Specify a file with aider model settings for unknown models
-model-settings-file: .aider.model.settings.yml
+model-settings-file: aider_configs/.aider.model.settings.yml
 
 ## Specify a file with context window and costs for unknown models
-model-metadata-file: .aider.model.metadata.json
+model-metadata-file: aider_configs/.aider.model.metadata.json
 
 ## Verify the SSL cert when connecting to models (default: True)
 #verify-ssl: true
@@ -93,7 +93,7 @@ model-metadata-file: .aider.model.metadata.json
 #max-chat-history-tokens: xxx
 
 ## Specify the .env file to load (default: .env in git root)
-env-file: .env
+env-file: aider_configs/.env
 
 #################
 # Cache Settings:
@@ -177,7 +177,7 @@ git: true
 gitignore: true
 
 ## Specify the aider ignore file (default: .aiderignore in git root)
-aiderignore: .aiderignore
+# aiderignore: .aiderignore
 
 ## Only consider files in the current subtree of the git repository
 #subtree-only: false
@@ -244,7 +244,7 @@ aiderignore: .aiderignore
 #read: xxx
 ## Specify multiple values like this:
 #read: [xxx,yyyy,zzz]
-read: [CONVENTIONS.md]
+read: [aider_configs/CONVENTIONS.md]
 
 ## Use VI editing mode in the terminal (default: False)
 #vim: false

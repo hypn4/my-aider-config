@@ -1,0 +1,61 @@
+# name: str
+# edit_format: str = "whole"
+# weak_model_name: Optional[str] = None
+# use_repo_map: bool = False
+# send_undo_reply: bool = False
+# accepts_images: bool = False
+# lazy: bool = False
+# reminder: str = "user"
+# examples_as_sys_msg: bool = False
+# extra_params: Optional[dict] = None
+# cache_control: bool = False
+# caches_by_default: bool = False
+# use_system_prompt: bool = True
+# use_temperature: bool = True
+# streaming: bool = True
+# editor_model_name: Optional[str] = None
+# editor_edit_format: Optional[str] = None
+
+# https://openrouter.ai/models?max_price=0
+
+- name: openrouter/liquid/lfm-40b:free
+  edit_format: "whole"
+  use_repo_map: true
+  extra_params:
+    extra_body:
+      provider:
+        allow_fallbacks: false
+        data_collection: "deny"
+- name: openrouter/meta-llama/llama-3.2-3b-instruct:freee
+  edit_format: "whole"
+  use_repo_map: true
+  extra_params:
+    extra_body:
+      provider:
+        allow_fallbacks: false
+        data_collection: "deny"
+- name: openrouter/meta-llama/llama-3.1-405b-instruct:free
+  edit_format: "whole"
+  use_repo_map: true
+  extra_params:
+    extra_body:
+      provider:
+        allow_fallbacks: false
+        data_collection: "deny"
+        data_collection: "deny"
+- name: openrouter/meta-llama/llama-3.1-8b-instruct:free
+  edit_format: "whole"
+  use_repo_map: true
+  extra_params:
+    extra_body:
+      provider:
+        allow_fallbacks: false
+        data_collection: "deny"
+- name: openrouter/nousresearch/hermes-3-llama-3.1-405b:free
+  edit_format: "whole"
+  use_repo_map: true
+  extra_params:
+    extra_body:
+      provider:
+        allow_fallbacks: false
+        data_collection: "deny"
